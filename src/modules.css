@@ -8,7 +8,7 @@
     text-align: center;
     background-color: rgb(34, 44, 44);
     padding: 8rem;
-    border-radius: 20px; 
+    border-radius: 20px;
  
 }
 
@@ -21,11 +21,30 @@
     
 }
 
+.LabelB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 .inputB {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    object-fit: cover;
+}
+
+.buttonA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #passwordSize {

@@ -32,8 +32,8 @@ export default function App() {
   return (
       <div className="app">
         <Title>Gerar Senhas</Title>
-      <div>
-        <div>
+     
+        <div className='LabelB'>
           <label htmlFor="showInput">Customizar tamanho:</label>
           <input
             type="checkbox"
@@ -42,17 +42,18 @@ export default function App() {
             onChange={() => setShowInput(show => !show)}
           />
         </div>
-        </div>
+       
         {showInput ? (
-          <div>
-            <label htmlFor="customSize">Tamanho: </label>
+          <div className='inputB'>
+            <label htmlFor="customSize"></label>
             <Input passwordSize={customSize} setPasswordSize={setCustomSize} />
           </div>
         ): null}
        
-    
-        <Button onClick={geral}>Gerar Senha de {passwordSize}</Button>
-        <Button onClick={copyToClipborad}>{copyText}</Button>
+        <div className='buttonA'>
+          <Button onClick={geral}>Gerar Senha de {passwordSize}</Button>
+          <Button onClick={copyToClipborad}>{copyText}</Button>  
+        </div>
         <Title>Sua senha é: </Title>
         <Title>{senha}</Title>
       </div> 
